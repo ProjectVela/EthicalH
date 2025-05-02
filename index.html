@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>projectVela</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #00ff00;
+      font-family: monospace;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .button {
+      background-color: #1a1a1a;
+      color: #00ff00;
+      border: 1px solid #00ff00;
+      padding: 10px 20px;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .button.locked {
+      background-color: #333;
+      border-color: #666;
+      color: #666;
+    }
+
+    .button.small-text {
+      font-size: 0.8em;
+      color: #999;
+    }
+
+    .question-box {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #1f1f1f;
+      border: 1px solid #00ff00;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>projectVela: Teaching You Ethical Hacking</h1>
+  <p id="xpDisplay">XP: 0</p>
+
+  <div>
+    <button class="button" id="basicBtn">Basic</button>
+    <button class="button locked" id="intermediateBtn">Intermediate <span class="small-text" id="intReq">(Need 100 XP)</span></button>
+    <button class="button locked" id="advancedBtn">Advanced <span class="small-text" id="advReq">(Need 300 XP)</span></button>
+  </div>
+
+  <div class="question-box" id="quizContainer"></div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
